@@ -130,36 +130,7 @@ ls -la
    - Import the database structure (if available) or create tables manually
 
 3. **Database Configuration**
-   ```sql
-   -- Example table structures
-   CREATE TABLE faqs (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       question TEXT NOT NULL,
-       answer TEXT NOT NULL,
-       category VARCHAR(100),
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
-
-   CREATE TABLE guides (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       title VARCHAR(255) NOT NULL,
-       summary TEXT,
-       content TEXT,
-       level ENUM('beginner', 'intermediate', 'advanced', 'expert'),
-       tags TEXT,
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
-
-   CREATE TABLE user_questions (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       name VARCHAR(255) NOT NULL,
-       email VARCHAR(255) NOT NULL,
-       category VARCHAR(100),
-       question TEXT NOT NULL,
-       status ENUM('pending', 'answered', 'resolved') DEFAULT 'pending',
-       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
-   ```
+   Remember to run the `heraldbuilds.sql` file in heraldbuilds_php in either MySQL Workbench or phpMyAdmin
 
 ### Step 3: Backend API Setup
 
@@ -250,8 +221,8 @@ ls -la
 5. **Access Admin Dashboard**
    - Open http://localhost:3001
    - Login with default credentials:
-     - Username: `admin`
-     - Password: `password123`
+     - Username: `Griffin`
+     - Password: `hello123`
 
 ### Step 6: Final Configuration
 
