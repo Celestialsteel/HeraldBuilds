@@ -153,8 +153,24 @@ Lora_*
 LawlinkOOP/
 C++ projects/
 
+# Development and test files (unnecessary for production)
+test-*.php
+test-*.html
+check-*.php
+setup-*.php
+setup-*.bat
+quick-test.php
+enable-backend.js
+fix-api-paths.bat
+database-config.php
+App.css
+
+# API examples and development files
+api-examples/
+
 # Keep only Herald Builds related files
 !HeraldBuilds/
 !HeraldBuilds-admin/
+!backend-apis/
 !README.md
 !.gitignore
