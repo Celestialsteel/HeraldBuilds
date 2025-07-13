@@ -1,0 +1,101 @@
+[
+  {
+    "title": "PC won't turn on at all",
+    "severity": "Critical",
+    "commonSymptoms": ["No lights", "No fans spinning", "Completely dead"],
+    "solutions": [
+      "Check power cable connections to both PC and wall outlet",
+      "Verify power supply switch is in the ON position",
+      "Test with a different power cable",
+      "Check if power button is properly connected to motherboard",
+      "Try removing and reseating RAM modules",
+      "Check for loose motherboard power connectors (24-pin and 8-pin CPU)"
+    ]
+  },
+  {
+    "title": "PC turns on but no display",
+    "severity": "High",
+    "commonSymptoms": [
+      "Fans spinning",
+      "Lights on",
+      "No video output",
+      "Monitor shows no signal"
+    ],
+    "solutions": [
+      "Check monitor cable connections (HDMI, DisplayPort, etc.)",
+      "Try a different monitor or cable",
+      "Ensure monitor is set to correct input source",
+      "Reseat graphics card and RAM modules",
+      "Try using motherboard video output (if available)",
+      "Clear CMOS by removing battery for 30 seconds"
+    ]
+  },
+  {
+    "title": "PC starts but immediately shuts down",
+    "severity": "High",
+    "commonSymptoms": [
+      "Powers on for 1-2 seconds",
+      "Fans start then stop",
+      "Repeating cycle"
+    ],
+    "solutions": [
+      "Check CPU power connector (8-pin)",
+      "Verify RAM is properly seated and compatible",
+      "Check for overheating - ensure CPU cooler is properly mounted",
+      "Test with one RAM stick at a time",
+      "Check for short circuits - ensure no loose screws in case",
+      "Verify power supply wattage is sufficient for your components"
+    ]
+  },
+  {
+    "title": "PC boots to BIOS but not Windows",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "PC loads into BIOS automatically",
+      "Boot device not found",
+      "Drive not showing in boot options"
+    ],
+    "solutions": [
+      "Check if boot drive is detected in BIOS",
+      "Make sure SATA or NVMe drive is properly connected",
+      "Verify boot priority is set correctly in BIOS",
+      "Reconnect or reseat the storage drive",
+      "Check for corrupted OS or missing bootloader",
+      "Use Windows recovery media to repair startup"
+    ]
+  },
+  {
+    "title": "No boot device found",
+    "severity": "High",
+    "commonSymptoms": [
+      "Black screen with error message",
+      "'No bootable device'",
+      "'Insert boot media' error"
+    ],
+    "solutions": [
+      "Check if the boot drive is recognized in BIOS",
+      "Ensure correct boot order (e.g., SSD before USB or CD)",
+      "Reconnect the boot drive",
+      "Run Startup Repair using a bootable Windows USB",
+      "Check for corrupted bootloader (use bootrec /fixboot in CMD)",
+      "Check if drive is initialized and partitioned properly"
+    ]
+  },
+  {
+    "title": "PC stuck in reboot loop",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "PC turns on and restarts repeatedly",
+      "No time to access BIOS or OS",
+      "Never fully boots to desktop"
+    ],
+    "solutions": [
+      "Disconnect external devices (USB, drives) and retry",
+      "Check for overheating or hardware failure (RAM/CPU/GPU)",
+      "Try entering Safe Mode via recovery media",
+      "Reset BIOS to default settings",
+      "Update or roll back BIOS (if recently changed)",
+      "Perform system restore or reinstall OS if corrupted"
+    ]
+  }
+]

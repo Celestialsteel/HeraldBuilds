@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Overheating components",
+    "severity": "High",
+    "commonSymptoms": [
+      "High temperatures",
+      "Thermal throttling",
+      "Loud fans",
+      "System shutting down"
+    ],
+    "solutions": [
+      "Clean dust from all fans and heatsinks",
+      "Reapply thermal paste on CPU",
+      "Check if all case fans are working",
+      "Improve case airflow - add intake/exhaust fans",
+      "Verify CPU cooler is properly mounted",
+      "Check ambient room temperature"
+    ]
+  },
+  {
+    "title": "RAM not detected",
+    "severity": "High",
+    "commonSymptoms": [
+      "BIOS shows less RAM",
+      "Memory errors",
+      "Random crashes",
+      "Boot issues"
+    ],
+    "solutions": [
+      "Reseat all RAM modules firmly",
+      "Try each RAM stick individually",
+      "Check motherboard QVL for RAM compatibility",
+      "Clean RAM slot contacts with compressed air",
+      "Test RAM in different slots",
+      "Update BIOS to latest version"
+    ]
+  },
+  {
+    "title": "Hard drive not recognized",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "Drive missing in BIOS",
+      "Not showing in Windows",
+      "Strange noises from drive",
+      "Slow access times"
+    ],
+    "solutions": [
+      "Check SATA data and power cable connections",
+      "Try different SATA ports on motherboard",
+      "Test drive in another computer",
+      "Check if drive appears in Disk Management",
+      "Update storage drivers",
+      "Run hard drive health check tools"
+    ]
+  },
+  {
+    "title": "CMOS battery failure",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Wrong system date and time",
+      "BIOS settings reset on every boot",
+      "Boot errors like 'CMOS checksum error'",
+      "PC fails to start intermittently"
+    ],
+    "solutions": [
+      "Replace the CMOS battery (usually CR2032 coin cell)",
+      "Clear CMOS using motherboard jumper (if needed)",
+      "Reset BIOS settings to default and save",
+      "Ensure battery is properly seated",
+      "Check motherboard manual for CMOS battery location"
+    ]
+  },
+  {
+    "title": "GPU not detected",
+    "severity": "High",
+    "commonSymptoms": [
+      "No display output from GPU",
+      "Fans spin but no video signal",
+      "Device Manager doesn't show GPU",
+      "Games crash or fail to launch"
+    ],
+    "solutions": [
+      "Reseat GPU into PCIe slot firmly",
+      "Ensure GPU power connectors are properly plugged in",
+      "Try GPU in a different PCIe slot (if available)",
+      "Test GPU in another system to verify it's working",
+      "Update motherboard BIOS and chipset drivers",
+      "Check BIOS settings for GPU initialization"
+    ]
+  },
+  {
+    "title": "USB ports not working",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "USB devices not recognized",
+      "No power to USB peripherals",
+      "Intermittent USB connection",
+      "Error in Device Manager"
+    ],
+    "solutions": [
+      "Restart PC and check if issue persists",
+      "Try USB ports on both front and back panel",
+      "Update USB drivers in Device Manager",
+      "Check for power settings that may disable USB (Device Manager → Power Management)",
+      "Test with known-good USB device",
+      "Check motherboard headers and internal USB connections"
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "title": "No internet connection",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "No network access",
+      "Limited connectivity",
+      "Can't browse web",
+      "WiFi not working"
+    ],
+    "solutions": [
+      "Check ethernet cable connections",
+      "Restart router and modem",
+      "Update network adapter drivers",
+      "Run Windows Network Troubleshooter",
+      "Disable and re-enable network adapter",
+      "Check if WiFi antenna is properly connected"
+    ]
+  },
+  {
+    "title": "Bluetooth not working",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Devices won't pair",
+      "Bluetooth missing",
+      "Connection drops",
+      "Audio cutting out"
+    ],
+    "solutions": [
+      "Check if Bluetooth is enabled in Windows",
+      "Update Bluetooth drivers",
+      "Remove and re-pair devices",
+      "Check if Bluetooth antenna is connected",
+      "Restart Bluetooth service in Windows",
+      "Clear Bluetooth cache"
+    ]
+  },
+  {
+    "title": "Slow internet speed",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Webpages load slowly",
+      "Buffering during streaming",
+      "Downloads take too long",
+      "Lag in online games"
+    ],
+    "solutions": [
+      "Test internet speed using online tools (e.g., Speedtest.net)",
+      "Restart router and modem",
+      "Move closer to WiFi router or use ethernet",
+      "Disable background downloads and updates",
+      "Change WiFi channel to avoid interference",
+      "Update router firmware and network drivers"
+    ]
+  },
+  {
+    "title": "WiFi keeps disconnecting",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "Intermittent connection drops",
+      "Need to reconnect manually",
+      "Network disappears randomly",
+      "Streaming or downloads interrupted"
+    ],
+    "solutions": [
+      "Forget and reconnect to the WiFi network",
+      "Update wireless network drivers",
+      "Disable WiFi power-saving settings",
+      "Change router frequency (2.4GHz ↔ 5GHz)",
+      "Check for interference from other devices",
+      "Reset network settings in Windows"
+    ]
+  },
+  {
+    "title": "Ethernet not working",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "No network detected when plugged in",
+      "Unidentified network",
+      "Red X over network icon",
+      "No lights on ethernet port"
+    ],
+    "solutions": [
+      "Try a different ethernet cable",
+      "Test different LAN port on router",
+      "Enable ethernet adapter in Device Manager",
+      "Update LAN/network adapter drivers",
+      "Check BIOS to ensure onboard LAN is enabled",
+      "Check for bent pins or damaged port"
+    ]
+  }
+]

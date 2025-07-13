@@ -1,0 +1,92 @@
+[
+  {
+    "title": "No sound output",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "No audio",
+      "Sound not working",
+      "Speakers silent",
+      "Headphones not detected"
+    ],
+    "solutions": [
+      "Check if correct audio device is set as default",
+      "Update audio drivers",
+      "Check volume mixer settings",
+      "Try different audio output ports",
+      "Restart Windows Audio service",
+      "Check if audio cables are properly connected"
+    ]
+  },
+  {
+    "title": "Display resolution issues",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Wrong resolution",
+      "Blurry display",
+      "Black borders",
+      "Overscan issues"
+    ],
+    "solutions": [
+      "Update graphics drivers",
+      "Check display settings in Windows",
+      "Adjust monitor settings directly",
+      "Try different display cable",
+      "Check if monitor supports current resolution",
+      "Reset display settings to default"
+    ]
+  },
+  {
+    "title": "Microphone not working",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "Mic input not detected",
+      "Voice not picked up",
+      "Muted in apps",
+      "Can't record audio"
+    ],
+    "solutions": [
+      "Check if correct input device is selected",
+      "Unmute microphone in sound settings",
+      "Update audio and microphone drivers",
+      "Allow microphone access under Privacy settings",
+      "Test mic in another app or device",
+      "Try a different audio input port"
+    ]
+  },
+  {
+    "title": "Multiple monitor issues",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Second monitor not detected",
+      "Extended display not working",
+      "Black screen on one monitor",
+      "Wrong screen arrangement"
+    ],
+    "solutions": [
+      "Press Windows + P to cycle through display modes",
+      "Check cable connections and monitor power",
+      "Detect monitors in Display Settings",
+      "Update GPU drivers",
+      "Try swapping cables or ports",
+      "Verify both monitors are powered on and set to correct input"
+    ]
+  },
+  {
+    "title": "Audio crackling or distortion",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Static sounds",
+      "Audio lag or popping",
+      "Distorted music or voice",
+      "Intermittent playback issues"
+    ],
+    "solutions": [
+      "Lower audio format settings in sound control panel",
+      "Disable audio enhancements",
+      "Update audio drivers",
+      "Try different headphones/speakers",
+      "Move away from potential interference sources (e.g., wireless routers)",
+      "Disable power-saving features on the audio device"
+    ]
+  }
+]

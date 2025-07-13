@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Slow boot times",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "Long startup",
+      "Black screen during boot",
+      "Delayed windows loading"
+    ],
+    "solutions": [
+      "Enable fast startup in Windows power options",
+      "Disable unnecessary startup programs",
+      "Test with a different power cable",
+      "Update motherboard BIOS",
+      "Check for hard drive errors using chkdsk",
+      "Consider upgrading to an SSD",
+      "Disable Windows search indexing temporarily"
+    ]
+  },
+  {
+    "title": "Low gaming performance",
+    "severity": "Medium",
+    "commonSymptoms": ["Long FPS", "Shuttering", "Frame drops", "Lag in games"],
+    "solutions": [
+      "Update graphics drivers to latest version",
+      "Check GPU and CPU temperatures during gaming",
+      "Lower in-game graphics settings",
+      "Close background applications",
+      "Enable XMP/DOCP for RAM in BIOS",
+      "Check if GPU is properly seated and powered"
+    ]
+  },
+  {
+    "title": "System freezing or crashing",
+    "severity": "High",
+    "commonSymptoms": [
+      "Random freezes",
+      "Blue screen errors",
+      "System restarts",
+      "Application crashes"
+    ],
+    "solutions": [
+      "Run Windows Memory Diagnostic to test RAM",
+      "Check system temperatures - clean dust from components",
+      "Update all drivers, especially GPU and chipset",
+      "Run system file checker (sfc /scannow)",
+      "Check Windows Event Viewer for error logs",
+      "Test with default BIOS settings (disable overclocking)"
+    ]
+  },
+  {
+    "title": "High CPU or Disk usage",
+    "severity": "Medium",
+    "commonSymptoms": [
+      "Laggy performance",
+      "100% CPU or Disk in Task Manager",
+      "Slow response times"
+    ],
+    "solutions": [
+      "End unnecessary background tasks using Task Manager",
+      "Disable startup apps that are resource-heavy",
+      "Scan for malware using Windows Defender or Malwarebytes",
+      "Turn off Windows Tips and Background Apps",
+      "Check for Windows Updates stuck or looping",
+      "Reset or rebuild Windows search index"
+    ]
+  },
+  {
+    "title": "Apps take too long to open",
+    "severity": "Low",
+    "commonSymptoms": [
+      "Delay after clicking app",
+      "Loading cursor spins for a long time",
+      "App appears non-responsive briefly"
+    ],
+    "solutions": [
+      "Check for available RAM and close unused apps",
+      "Update the application and Windows OS",
+      "Run system file checker (sfc /scannow)",
+      "Reinstall or repair the problematic app",
+      "Scan for viruses or corrupted files",
+      "Ensure app is not installed on a failing drive"
+    ]
+  },
+  {
+    "title": "PC overheating or running loud",
+    "severity": "High",
+    "commonSymptoms": [
+      "Loud fan noise",
+      "High CPU/GPU temperatures",
+      "Thermal throttling",
+      "Shutdowns during load"
+    ],
+    "solutions": [
+      "Clean dust from fans, CPU cooler, and GPU",
+      "Reapply thermal paste if needed",
+      "Improve airflow in the case (add intake/exhaust fans)",
+      "Use software to monitor temperatures (e.g., HWMonitor)",
+      "Ensure fans are spinning properly and connected",
+      "Replace stock cooler with more efficient aftermarket one"
+    ]
+  }
+]

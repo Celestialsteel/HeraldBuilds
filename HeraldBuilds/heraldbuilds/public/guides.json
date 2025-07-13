@@ -1,0 +1,688 @@
+[
+  {
+    "id": 1,
+    "title": "Building a Custom Gaming PC",
+    "summary": "A comprehensive guide to building your own gaming PC from scratch.",
+    "link": "https://youtu.be/qkr07CutHrU?si=PAbRuEdB-2W74VLV",
+    "level": "Beginner",
+    "readTime": "15 min read",
+    "tags": ["PC Build", "Gaming", "Custom"],
+    "instructions": [
+      "1. Gather all components: CPU, GPU, RAM, motherboard, PSU, storage, case.",
+      "2. Prepare the case by removing side panels and installing standoffs.",
+      "3. Install the CPU into the motherboard socket and secure it.",
+      "4. Apply thermal paste to the CPU and attach the cooler.",
+      "5. Insert RAM sticks into the appropriate slots on the motherboard.",
+      "6. Mount the motherboard into the case using screws.",
+      "7. Install the PSU at the bottom or top of the case depending on design.",
+      "8. Connect power cables to the motherboard, CPU, and GPU.",
+      "9. Install storage drives (HDD/SSD) in designated bays.",
+      "10. Connect SATA cables from drives to motherboard.",
+      "11. Install GPU into PCIe slot and secure with screws.",
+      "12. Close the case and connect peripherals (monitor, keyboard, mouse).",
+      "13. Boot up and enter BIOS to configure settings."
+    ],
+    "recommendedTools": [
+      "Phillips #2 screwdriver",
+      "Anti-static wrist strap",
+      "Cable ties"
+    ],
+    "whatToLookFor": [
+      "Ensure all components are compatible",
+      "Check for proper cable management",
+      "Monitor temperatures during first boot"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Replacing a Laptop Battery",
+    "summary": "Step-by-step instructions to replace an old or dead laptop battery",
+    "link": "https://youtu.be/agK0i9rDav8?si=NecUCqUaN1r-WHlA",
+    "level": "Intermediate",
+    "readTime": "8 min read",
+    "tags": ["Laptop", "Battery", "Repair"],
+    "instructions": [
+      "1. Shut down the laptop and unplug it from any power source.",
+      "2. Remove the back panel using a Phillips #0 screwdriver—typically 10–12 screws.",
+      "3. Disconnect the battery connector gently from the motherboard.",
+      "4. Unscrew the battery (usually 4–6 screws depending on the model).",
+      "5. Lift out the old battery and replace it with a compatible model.",
+      "6. Screw in the new battery and reconnect the battery cable.",
+      "7. Reattach the back panel and tighten all screws.",
+      "8. Plug in the charger and verify if the battery is detected in BIOS or Windows."
+    ],
+    "recommendedTools": [
+      "Phillips #0 screwdriver",
+      "Plastic prying tool",
+      "Replacement battery"
+    ],
+    "whatToLookFor": [
+      "Use exact battery model to avoid compatibility issues",
+      "Don’t force connectors",
+      "Screws should not be left loose"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Overclocking a CPU",
+    "summary": "Boost performance by safely overclocking your processor",
+    "link": "https://youtu.be/dJMDB3PjBw8?si=NJzPWtwp9Ul1xGRu",
+    "level": "Advanced",
+    "readTime": "15 min read",
+    "tags": ["CPU", "Performance", "Overclocking"],
+    "instructions": [
+      "1. Download and install CPU monitoring tools like HWMonitor and stress test software like Prime95.",
+      "2. Enter BIOS (usually F2 or Delete during boot).",
+      "3. Locate CPU multiplier settings and increase it in increments of 1 (e.g., 40x to 41x).",
+      "4. Adjust core voltage slightly (e.g., from 1.25V to 1.3V).",
+      "5. Save and exit BIOS. Boot into Windows and run Prime95 for 15 minutes.",
+      "6. Monitor temperatures. If CPU exceeds 85°C, lower settings.",
+      "7. Repeat steps 3–6 until you find a stable configuration.",
+      "8. Optional: Enable XMP in BIOS to overclock RAM as well."
+    ],
+    "recommendedTools": [
+      "HWMonitor",
+      "Prime95",
+      "CPU-Z",
+      "BIOS access via keyboard",
+      "Good CPU cooler"
+    ],
+    "whatToLookFor": [
+      "Watch for BSOD or freezes as signs of instability",
+      "Keep temps below 85°C",
+      "Don’t raise voltage too much to avoid CPU degradation"
+    ]
+  },
+  {
+    "title": "Installing a Solid State Drive (SSD)",
+    "summary": "Upgrade your system's speed by installing an SSD.",
+    "link": "https://youtu.be/PRuOuv-fT7g?si=qwBpOEXFd1d1LjSi",
+    "level": "Beginner",
+    "readTime": "10 min read",
+    "tags": ["SSD", "Storage", "Upgrade"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available SATA port on the motherboard.",
+      "4. Connect the SSD to the SATA port using a SATA cable.",
+      "5. Connect the SSD to the power supply using a SATA power cable.",
+      "6. Secure the SSD in place with screws or mounting brackets.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into BIOS to ensure SSD is recognized, then install OS if needed."
+    ],
+    "recommendedTools": [
+      "Phillips #2 screwdriver",
+      "SATA cable",
+      "SATA power cable",
+      "Mounting screws or brackets"
+    ],
+    "whatToLookFor": [
+      "Ensure SSD is securely connected",
+      "Check BIOS for detection",
+      "Use proper mounting to avoid vibrations"
+    ]
+  },
+  {
+    "title": "Building a Custom Water Cooling Loop",
+    "summary": "Advanced guide to building a custom water cooling system for your PC.",
+    "link": "https://youtu.be/5ZnDESqJdyU?si=Yq1og2MdWesgBBs1",
+    "level": "Expert",
+    "readTime": "20 min read",
+    "tags": ["Water Cooling", "PC Build", "Cooling"],
+    "instructions": [
+      "1. Gather components: water block, pump, reservoir, radiator, tubing, fittings, coolant.",
+      "2. Install the CPU water block by applying thermal paste and securing it with screws.",
+      "3. Mount the radiator in the case using appropriate fans.",
+      "4. Connect the pump to the reservoir and secure it in place.",
+      "5. Cut tubing to length and connect all components using fittings.",
+      "6. Fill the reservoir with coolant and run the pump to check for leaks.",
+      "7. Once leak-free, power on the system and monitor temperatures."
+    ],
+    "recommendedTools": [
+      "Tubing cutter",
+      "Screwdriver set",
+      "Leak testing kit",
+      "Coolant",
+      "Cable ties"
+    ],
+    "whatToLookFor": [
+      "Ensure all connections are tight to prevent leaks",
+      "Monitor pump operation",
+      "Check for air bubbles in the loop"
+    ]
+  },
+  {
+    "title": "Upgrading RAM in a Desktop PC",
+    "summary": "A simple guide to increase your desktop's memory capacity.",
+    "link": "https://youtu.be/RdukEtSlia0?si=hsslIJXunnCrO5aU",
+    "level": "Beginner",
+    "readTime": "6 min read",
+    "tags": ["RAM", "Upgrade", "Desktop"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate existing RAM slots on the motherboard.",
+      "4. Release clips on both sides of the RAM slot to remove old RAM if necessary.",
+      "5. Align new RAM module with the slot and press down firmly until clips click into place.",
+      "6. Repeat for additional RAM modules if upgrading more than one.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into BIOS to verify new RAM is recognized."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure RAM is seated properly",
+      "Check for compatibility with motherboard",
+      "Verify total memory in BIOS"
+    ]
+  },
+  {
+    "title": "Installing a Graphics Card",
+    "summary": "Step-by-step guide to installing a new GPU in your PC.",
+    "link": "https://youtu.be/bE4gD1FkIA8?si=k9bdw0nrmL2wQSv-",
+    "level": "Beginner",
+    "readTime": "5 min read",
+    "tags": ["GPU", "Installation", "PC Build"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate the PCIe x16 slot on the motherboard.",
+      "4. Remove any expansion slot covers that may block the GPU.",
+      "5. Align the GPU with the PCIe slot and press down firmly until it clicks into place.",
+      "6. Secure the GPU with screws to the case.",
+      "7. Connect power cables from the PSU to the GPU (6-pin or 8-pin as required).",
+      "8. Close the case and plug in the power cord.",
+      "9. Boot into Windows and install drivers for the new GPU."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure GPU is seated properly",
+      "Check for power connections",
+      "Verify GPU is recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Cleaning Dust from a PC",
+    "summary": "Keep your computer running cool by regularly cleaning dust buildup.",
+    "link": "https://youtu.be/qhP_rnPrXOw?si=-5abnABzxtEIkE3c",
+    "level": "Beginner",
+    "readTime": "4 min read",
+    "tags": ["Maintenance", "Cleaning", "PC Care"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Use compressed air to blow out dust from fans, heatsinks, and components.",
+      "4. Wipe surfaces with a microfiber cloth to remove remaining dust.",
+      "5. Clean filters if applicable (e.g., on intake fans).",
+      "6. Reassemble the case and plug in the power cord."
+    ],
+    "recommendedTools": [
+      "Compressed air canister",
+      "Microfiber cloth",
+      "Phillips #2 screwdriver"
+    ],
+    "whatToLookFor": [
+      "Avoid touching components with bare hands",
+      "Ensure fans spin freely after cleaning",
+      "Check for dust buildup in hard-to-reach areas"
+    ]
+  },
+  {
+    "title": "Installing a Network Card",
+    "summary": "Add Wi-Fi or Bluetooth capabilities to your desktop with a network card.",
+    "link": "https://youtu.be/nyqou9hU7mY?si=Ee5HR4AbtJqFA7TI",
+    "level": "Beginner",
+    "readTime": "5 min read",
+    "tags": ["Network", "Installation", "PC Build"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the network card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install drivers for the network card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for antenna connections if applicable",
+      "Verify network card is recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Upgrading to Windows 11",
+    "summary": "A guide to upgrading your PC to the latest Windows operating system.",
+    "link": "https://youtu.be/ybgY7DxppV0?si=ipfaFQtbuC6Y_ylJ",
+    "level": "Beginner",
+    "readTime": "7 min read",
+    "tags": ["Windows", "Upgrade", "Operating System"],
+    "instructions": [
+      "1. Check system requirements for Windows 11 (TPM 2.0, Secure Boot, etc.).",
+      "2. Backup important files to an external drive or cloud storage.",
+      "3. Download the Windows 11 Installation Assistant from Microsoft's website.",
+      "4. Run the Installation Assistant and follow on-screen prompts.",
+      "5. Choose 'Upgrade this PC now' and allow the tool to check compatibility.",
+      "6. Accept terms and conditions, then click 'Install'.",
+      "7. Wait for the installation process to complete, which may take some time.",
+      "8. After installation, customize settings and restore files if needed."
+    ],
+    "recommendedTools": [
+      "Windows 11 Installation Assistant",
+      "External storage for backups"
+    ],
+    "whatToLookFor": [
+      "Ensure all drivers are updated post-installation",
+      "Check for Windows updates after upgrade",
+      "Verify TPM and Secure Boot settings in BIOS"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Setting Up Dual Monitors",
+    "summary": "Enhance productivity by setting up dual monitors on your PC.",
+    "link": "https://youtu.be/uRtZBOgzoSk?si=V3AWx4cqEyPxRyUV",
+    "level": "Beginner",
+    "readTime": "6 min read",
+    "tags": ["Monitors", "Setup", "Productivity"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Connect the first monitor to the primary video output (HDMI, DisplayPort, etc.).",
+      "3. Connect the second monitor to an available video output on the GPU.",
+      "4. Power on both monitors and the computer.",
+      "5. Right-click on the desktop and select 'Display settings' in Windows.",
+      "6. Under 'Multiple displays', select 'Extend these displays'.",
+      "7. Adjust resolution and orientation as needed for each monitor.",
+      "8. Click 'Apply' to save changes."
+    ],
+    "recommendedTools": [
+      "HDMI/DisplayPort cables",
+      "Phillips #2 screwdriver (if mounting monitors)"
+    ],
+    "whatToLookFor": [
+      "Ensure both monitors are detected in Display settings",
+      "Adjust scaling for readability",
+      "Check cable connections if monitors do not display"
+    ]
+  },
+  {
+    "title": "Installing a Sound Card",
+    "summary": "Improve audio quality by installing a dedicated sound card.",
+    "link": "https://youtu.be/hhWexVqInis?si=iQHTOw7n45-TtGUD",
+    "level": "Intermediate",
+    "readTime": "5 min read",
+    "tags": ["Audio", "Installation", "PC Build"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the sound card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install drivers for the sound card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for audio output in Device Manager",
+      "Adjust sound settings in Windows"
+    ]
+  },
+  {
+    "title": "Replacing a Power Supply Unit (PSU)",
+    "summary": "A guide to safely replace an old or faulty PSU in your PC.",
+    "link": "https://youtu.be/bW3SWQPY19M?si=azx_5jA2L7317HCL",
+    "level": "Intermediate",
+    "readTime": "10 min read",
+    "tags": ["PSU", "Replacement", "PC Build"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Disconnect all cables connected to the old PSU (motherboard, GPU, drives).",
+      "4. Unscrew the PSU from the case (usually 4 screws at the back).",
+      "5. Remove the old PSU and replace it with the new one.",
+      "6. Secure the new PSU with screws and reconnect all cables.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and check for stability."
+    ],
+    "recommendedTools": [
+      "Phillips #2 screwdriver",
+      "Cable ties for cable management"
+    ],
+    "whatToLookFor": [
+      "Ensure all connections are secure",
+      "Check PSU wattage matches system requirements",
+      "Monitor for any unusual noises or overheating"
+    ]
+  },
+  {
+    "title": "Installing a M.2 NVMe SSD",
+    "summary": "Upgrade your storage speed with an M.2 NVMe SSD installation guide.",
+    "link": "https://youtu.be/fhPYpgLJKtQ?si=nQtPu2WiHztqDeEt",
+    "level": "Intermediate",
+    "readTime": "8 min read",
+    "tags": ["SSD", "M.2", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate the M.2 slot on the motherboard.",
+      "4. Remove the screw securing the M.2 slot cover (if applicable).",
+      "5. Align the M.2 SSD with the slot and insert it at a slight angle.",
+      "6. Press down gently and secure it with the screw removed earlier.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into BIOS to ensure SSD is recognized, then format it in Windows."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure SSD is seated properly",
+      "Check for detection in BIOS",
+      "Format SSD in Windows Disk Management"
+    ]
+  },
+  {
+    "title": "Setting Up a RAID Array",
+    "summary": "Learn how to set up a RAID array for improved performance or redundancy.",
+    "link": "https://youtu.be/BcDpQZ43KKc?si=_WoAyELXX1cwh-ti",
+    "level": "Advanced",
+    "readTime": "15 min read",
+    "tags": ["RAID", "Storage", "Configuration"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Install multiple hard drives or SSDs in available bays.",
+      "4. Connect drives to the motherboard and power supply.",
+      "5. Boot into BIOS and navigate to the RAID configuration section.",
+      "6. Select 'Create RAID Volume' and choose the RAID level (e.g., RAID 0, RAID 1).",
+      "7. Select the drives to include in the array and configure settings (strip size, volume name).",
+      "8. Save changes and exit BIOS, then format the new RAID volume in Windows Disk Management."
+    ],
+    "recommendedTools": [
+      "Phillips #2 screwdriver",
+      "SATA cables",
+      "Power cables"
+    ],
+    "whatToLookFor": [
+      "Ensure all drives are compatible with RAID configuration",
+      "Check for proper drive detection in BIOS",
+      "Monitor RAID health regularly"
+    ]
+  },
+  {
+    "title": "Installing a CPU Cooler",
+    "summary": "A guide to installing an aftermarket CPU cooler for better thermal performance.",
+    "link": "https://youtu.be/Ycc5gVG56oo?si=5rMutK9wjtuvck2r",
+    "level": "Intermediate",
+    "readTime": "10 min read",
+    "tags": ["Cooling", "CPU", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Remove the existing CPU cooler by unscrewing or unclipping it.",
+      "4. Clean the old thermal paste from the CPU using isopropyl alcohol and a lint-free cloth.",
+      "5. Apply a pea-sized amount of new thermal paste to the center of the CPU.",
+      "6. Align the new cooler with the mounting brackets and secure it in place.",
+      "7. Connect the cooler's fan cable to the CPU fan header on the motherboard.",
+      "8. Close the case and plug in the power cord."
+    ],
+    "recommendedTools": [
+      "Phillips #2 screwdriver",
+      "Isopropyl alcohol",
+      "Lint-free cloth",
+      "Thermal paste"
+    ],
+    "whatToLookFor": [
+      "Ensure cooler is securely mounted",
+      "Check fan operation in BIOS",
+      "Monitor CPU temperatures after installation"
+    ]
+  },
+  {
+    "title": "Installing a PCIe SSD",
+    "summary": "Upgrade your storage with a high-speed PCIe SSD installation guide.",
+    "link": "https://youtu.be/A2BDCc3awVg?si=wtBui2wbGe3mNzKj",
+    "level": "Intermediate",
+    "readTime": "8 min read",
+    "tags": ["SSD", "PCIe", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available M.2 slot on the motherboard.",
+      "4. Remove the screw securing the M.2 slot cover (if applicable).",
+      "5. Align the PCIe SSD with the slot and insert it at a slight angle.",
+      "6. Press down gently and secure it with the screw removed earlier.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into BIOS to ensure SSD is recognized, then format it in Windows."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure SSD is seated properly",
+      "Check for detection in BIOS",
+      "Format SSD in Windows Disk Management"
+    ]
+  },
+  {
+    "title": "Installing a USB Expansion Card",
+    "summary": "Add more USB ports to your PC with a USB expansion card.",
+    "link": "https://youtu.be/RNm6scp0KzI?si=R7qq7SJAghcHcj2Z",
+    "level": "Beginner",
+    "readTime": "5 min read",
+    "tags": ["USB", "Expansion", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the USB expansion card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install drivers for the USB expansion card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify USB ports are recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Installing a Blu-ray Drive",
+    "summary": "Add a Blu-ray drive to your PC for high-definition media playback.",
+    "link": "https://youtu.be/HBk-v1mswwA?si=RmmiJLKPGCNuc8D7",
+    "level": "Beginner",
+    "readTime": "6 min read",
+    "tags": ["Blu-ray", "Installation", "PC Build"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available 5.25\" drive bay.",
+      "4. Slide the Blu-ray drive into the bay and secure it with screws.",
+      "5. Connect the SATA data cable from the drive to the motherboard.",
+      "6. Connect the SATA power cable from the PSU to the drive.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install any necessary drivers."
+    ],
+    "recommendedTools": [
+      "Phillips #2 screwdriver",
+      "SATA data cable",
+      "SATA power cable"
+    ],
+    "whatToLookFor": [
+      "Ensure drive is securely mounted",
+      "Check for detection in BIOS",
+      "Install Blu-ray playback software if needed"
+    ]
+  },
+  {
+    "title": "Installing a PCIe Capture Card",
+    "summary": "Capture high-quality video from your gaming console or camera with a PCIe capture card.",
+    "link": "https://youtu.be/s8q5vVlxstY?si=0a2TIA5UZJPoGSCz",
+    "level": "Intermediate",
+    "readTime": "7 min read",
+    "tags": ["Capture Card", "Video", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe x16 slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the capture card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Connect any required cables (HDMI, USB) to the card.",
+      "8. Close the case and plug in the power cord.",
+      "9. Boot into Windows and install drivers for the capture card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify capture card is recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Installing a PCIe SSD Cooler",
+    "summary": "Keep your PCIe SSD cool with an aftermarket SSD cooler installation guide.",
+    "link": "https://youtu.be/yF9blQnk3ME?si=hE5x5zAQ0n2ElKC65",
+    "level": "Intermediate",
+    "readTime": "6 min read",
+    "tags": ["SSD", "Cooling", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate the PCIe SSD on the motherboard.",
+      "4. Remove the screw securing the SSD (if applicable).",
+      "5. Align the SSD cooler with the SSD and secure it using screws or clips provided.",
+      "6. Connect any required fan cables to the motherboard or PSU.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into BIOS to ensure SSD is recognized, then check temperatures in Windows."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure cooler is securely mounted",
+      "Check for detection in BIOS",
+      "Monitor SSD temperatures after installation"
+    ]
+  },
+  {
+    "title": "Installing a PCIe USB-C Card",
+    "summary": "Add USB-C ports to your PC with a PCIe USB-C card installation guide.",
+    "link": "https://youtu.be/WXgHVotn5Lk?si=e2eo6pOmInsXT3pe",
+    "level": "Beginner",
+    "readTime": "5 min read",
+    "tags": ["USB-C", "Expansion", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the USB-C card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install drivers for the USB-C card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify USB-C ports are recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Installing a PCIe SATA Expansion Card",
+    "summary": "Add more SATA ports to your PC with a PCIe SATA expansion card.",
+    "link": "https://youtu.be/o9F3f-xe7dE?si=lGSdbKkm54NTL9xh",
+    "level": "Beginner",
+    "readTime": "5 min read",
+    "tags": ["SATA", "Expansion", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the SATA expansion card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install drivers for the SATA expansion card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify SATA ports are recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Installing a PCIe Thunderbolt Card",
+    "summary": "Add Thunderbolt connectivity to your PC with a PCIe Thunderbolt card.",
+    "link": "https://youtu.be/_nuVsXl70Xk?si=TxsXCyqIPwAWK-a5",
+    "level": "Advanced",
+    "readTime": "10 min read",
+    "tags": ["Thunderbolt", "Expansion", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the Thunderbolt card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Connect any required power cables to the card.",
+      "8. Close the case and plug in the power cord.",
+      "9. Boot into Windows and install drivers for the Thunderbolt card."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify Thunderbolt ports are recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Installing a PCIe Network Interface Card (NIC)",
+    "summary": "Add wired networking capabilities to your PC with a PCIe NIC.",
+    "link": "https://youtu.be/4mkEx4LoMq8?si=v96lTkEhOgkNY0D_",
+    "level": "Beginner",
+    "readTime": "5 min read",
+    "tags": ["Networking", "NIC", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the NIC into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Close the case and plug in the power cord.",
+      "8. Boot into Windows and install drivers for the NIC."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify NIC is recognized in Device Manager"
+    ]
+  },
+  {
+    "title": "Installing a PCIe RAID Controller Card",
+    "summary": "Set up advanced RAID configurations with a PCIe RAID controller card.",
+    "link": "https://youtu.be/Ihysqb1SyzE?si=t8lt1B6w3arj9iy1",
+    "level": "Advanced",
+    "readTime": "12 min read",
+    "tags": ["RAID", "Controller", "Installation"],
+    "instructions": [
+      "1. Power off the computer and unplug it from the wall.",
+      "2. Open the case using a Phillips #2 screwdriver.",
+      "3. Locate an available PCIe slot on the motherboard.",
+      "4. Remove the expansion slot cover if necessary.",
+      "5. Insert the RAID controller card into the PCIe slot and press down firmly until it clicks.",
+      "6. Secure the card with screws to the case.",
+      "7. Connect any required power cables to the card.",
+      "8. Close the case and plug in the power cord.",
+      "9. Boot into BIOS and configure RAID settings as needed.",
+      "10. Install drivers for the RAID controller in Windows."
+    ],
+    "recommendedTools": ["Phillips #2 screwdriver", "Anti-static wrist strap"],
+    "whatToLookFor": [
+      "Ensure card is seated properly",
+      "Check for additional power connections if required",
+      "Verify RAID controller is recognized in Device Manager"
+    ]
+  }
+]
