@@ -59,6 +59,8 @@ const GuideDetails = () => {
             Loading guide details...
           </div>
         </div>
+
+        
         <Footer />
       </div>
     );
@@ -104,13 +106,6 @@ const GuideDetails = () => {
       <Header />
       <div className="guide-details-container">
         <div className="guide-card">
-          {/* Navigation - Back Button at Top */}
-          <div className="guide-navigation-top">
-            <button className="back-btn" onClick={() => navigate(-1)}>
-              ← Back to Guides
-            </button>
-          </div>
-
           {/* Admin Enhancement Indicator */}
           {adminGuideDetails && (
             <div className="admin-enhancement-badge">
@@ -211,6 +206,13 @@ const GuideDetails = () => {
               </div>
             </div>
           )}
+
+          {/* Navigation */}
+          <div className="guide-navigation">
+            <button className="back-btn" onClick={() => navigate(-1)}>
+              ← Back to Guides
+            </button>
+          </div>
         </div>
       </div>
       <Footer />
