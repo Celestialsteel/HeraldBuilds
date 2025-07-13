@@ -22,15 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // Database connection
-    $host = 'localhost';
-    $dbname = 'heraldbuilds';
-    $db_username = 'root';
-    $db_password = 'pilos3245@2005';
+    // Database connection using secure config
+    $config = require_once '../../config/database.php';
     
     try {
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname", $db_username, $db_password);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $dsn = "mysql:host={$config['host']};dbname={$config['dbname']};charset={$config['charset']}";
+        $pdo = new PDO($dsn, $config['username'], $config['password'], $config['options']);
         
         // Check if admin exists in database
         $stmt = $pdo->prepare("SELECT adminID, adminName, password FROM admins WHERE adminName = ?");

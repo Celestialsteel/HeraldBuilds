@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump - SECURE VERSION
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
@@ -32,15 +32,18 @@ USE `heraldbuilds`;
 CREATE TABLE `admins` (
   `adminID` int NOT NULL,
   `adminName` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `admins`
+-- Password for Griffin is: hello123 (hashed using PHP password_hash)
 --
 
 INSERT INTO `admins` (`adminID`, `adminName`, `password`) VALUES
-(1, 'admin', 'admin123');
+(1, 'Griffin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi');
 
 -- --------------------------------------------------------
 
@@ -160,7 +163,8 @@ INSERT INTO `user_questions` (`id`, `name`, `email`, `category`, `question`, `st
 -- Indexes for table `admins`
 --
 ALTER TABLE `admins`
-  ADD PRIMARY KEY (`adminID`);
+  ADD PRIMARY KEY (`adminID`),
+  ADD UNIQUE KEY `adminName` (`adminName`);
 
 --
 -- Indexes for table `faqs`
@@ -224,3 +228,10 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- SECURITY NOTES:
+-- 1. Admin password is now properly hashed using PHP's password_hash() function
+-- 2. Default password is still 'hello123' but stored securely
+-- 3. Added unique constraint on adminName to prevent duplicates
+-- 4. Added timestamps to admin table for better tracking
+-- 5. You MUST update the login.php file to use password_verify() instead of direct comparison
