@@ -4,7 +4,7 @@
 
 ## 🎯 Project Overview
 
-Herald Builds is our project, a comprehensive web platform designed to guide users through every step of building the perfect PC. This full-stack application consists of a React-based frontend for users and a complete admin dashboard for content management, backed by PHP APIs and MySQL database.
+Herald Builds is a comprehensive web platform designed to guide users through every step of building the perfect PC. This full-stack application consists of a React-based frontend for users and a complete admin dashboard for content management, backed by PHP APIs and MySQL database.
 
 ### 🌟 What Makes Herald Builds Special
 
@@ -35,7 +35,7 @@ Herald/
 │   │   └── App.jsx
 │   ├── package.json
 │   └── README.md
-├── Backend APIs/                    # PHP backend services
+├── heraldbuilds_php/               # PHP backend services
 │   ├── apis/
 │   │   ├── faqs/
 │   │   ├── guides/
@@ -166,7 +166,7 @@ ls -la
 1. **Copy API Files to XAMPP**
    ```bash
    # Copy the APIs to your XAMPP htdocs directory
-   cp -r apis/ /path/to/xampp/htdocs/heraldbuilds/
+   cp -r heraldbuilds_php/apis/ /path/to/xampp/htdocs/heraldbuilds/
    ```
 
 2. **Configure Database Connection**
@@ -546,8 +546,8 @@ cd HeraldBuilds-admin
 npm install
 npm start  # http://localhost:3001
 
-# 5. Copy APIs to XAMPP htdocs/heraldbuilds/apis/
+# 5. Copy APIs from heraldbuilds_php/ to XAMPP htdocs/heraldbuilds/apis/
 # 6. Test everything works!
 ```
 
-**Default Admin Login**: griffin / hello123
+**Default Admin Login**: admin / password123

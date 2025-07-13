@@ -171,6 +171,6 @@ api-examples/
 # Keep only Herald Builds related files
 !HeraldBuilds/
 !HeraldBuilds-admin/
-!backend-apis/
+!heraldbuilds_php/
 !README.md
 !.gitignore
