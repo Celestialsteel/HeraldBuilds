@@ -1,0 +1,17 @@
+/* src/styles/components/Hero.css */
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 800px;
+  margin: 0 auto;
+}

@@ -1,0 +1,29 @@
+/* src/styles/base.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0e1320;
+  color: #f1f5f9;
+  line-height: 1.6;
+  padding: 20px;
+  padding-top: 64px; /* Space for fixed header */
+}
+
+a {
+  text-decoration: none;
+  color: #3b82f6;
+  transition: 0.3s ease;
+}
+
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --dark-bg: #0e1320;
+}

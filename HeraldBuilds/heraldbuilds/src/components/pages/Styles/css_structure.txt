@@ -1,0 +1,10 @@
+src/
+├── styles/
+│   ├── base.css (global styles)
+│   ├── components/
+│   │   ├── header.css
+│   │   ├── hero.css
+│   │   ├── features.css
+│   │   ├── benefits.css
+│   │   └── testimonials.css
+│   └── utilities.css (buttons, containers etc.) #reausable utility classes

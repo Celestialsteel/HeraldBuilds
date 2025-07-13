@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e1320;
+  color: #f1f5f9;
+  line-height: 1.6;
+  padding-top: 64px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles inherited from main CSS */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 32px;
+  background-color: #1c2433;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.site-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-links a {
+  font-family: Arial, sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #76a6f4;
+}
+
+/* Tools Hero Section */
+.tools-hero {
+  background: linear-gradient(rgba(14, 19, 32, 0.8), rgba(14, 19, 32, 0.9)),
+    url("../images/backgrounds/sdl-sanjaya-4gbbKX63V5I-unsplash (1).webp");
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.tools-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #8b5cf6, #6d28d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tools-hero p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+/* Tools Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.tool-card {
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(107, 114, 128, 0.1);
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-image {
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Tool images are now handled by the component's inline styles */
+
+.tool-card h3 {
+  color: #8b5cf6;
+  margin-bottom: 1rem;
+}
+
+.tool-card p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.tool-tips {
+  background: rgba(14, 19, 32, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.tool-tips h4 {
+  color: #8b5cf6;
+  margin-bottom: 0.5rem;
+}
+
+.tool-tips ul {
+  list-style-position: inside;
+  color: #94a3b8;
+}
+
+/* Safety Section */
+.tools-guide {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.tools-guide h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(45deg, #8b5cf6, #6d28d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.safety-tips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.tip {
+  padding: 2rem;
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 16px;
+  border: 1px solid rgba(107, 114, 128, 0.1);
+}
+
+.tip i {
+  font-size: 2rem;
+  color: #8b5cf6;
+  margin-bottom: 1rem;
+}
+
+.tip h3 {
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+}
+
+.tip p {
+  color: #94a3b8;
+}
+
+/* Components Section */
+.components-section {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #1e293b10, #172033);
+}
+
+.components-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f1f5f9;
+}
+
+.components-section > p {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.component-card {
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.component-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+.component-card .tool-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.component-card .tool-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.component-card:hover .tool-image img {
+  transform: scale(1.05);
+}
+
+.component-card h3 {
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.component-card p {
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.component-tips {
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.component-tips h4 {
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.component-tips ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.component-tips li {
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.component-tips li::before {
+  content: "•";
+  color: #3b82f6;
+  position: absolute;
+  left: 0;
+}
+
+/* Hardware Grid Section */
+.hardware-grid {
+  padding: 4rem 0;
+}
+
+.hardware-grid h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f1f5f9;
+}
+
+.hardware-grid > p {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.grid-item {
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+}
+
+.grid-item:hover::before {
+  opacity: 1;
+}
+
+.grid-item h3 {
+  color: #f1f5f9;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 6px;
+}
+
+.spec-label {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.spec-value {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Footer styles inherited from main CSS */
+footer {
+  background-color: #1c2433;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  color: #3b82f6;
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  color: #94a3b8;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #3b82f6;
+}
+
+.contact-info {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.copyright {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tools-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tool-card {
+    margin: 1rem;
+  }
+
+  .safety-tips {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .spec-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+
+.hardware-image-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hardware-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover .hardware-image-container img {
+  transform: scale(1.05);
+}

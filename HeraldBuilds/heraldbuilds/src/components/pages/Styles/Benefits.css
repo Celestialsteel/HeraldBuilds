@@ -1,0 +1,32 @@
+/* src/styles/components/Benefits.css */
+.benefits {
+  padding: 3rem 0 4rem;
+}
+
+.benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.benefit-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.benefit-cards .card {
+  background: linear-gradient(135deg, #6f11e2, #9333ea);
+  border-radius: 16px;
+  padding: 2rem;
+  flex: 1 1 260px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.benefit-cards .card p {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bold;
+}

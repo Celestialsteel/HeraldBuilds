@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #0e1320;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.guides-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1.title {
+  margin-top: 70px;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: rgb(163, 161, 161);
+  margin-bottom: 2rem;
+}
+
+#searchInput {
+  padding: 0.75rem 1rem;
+  width: 60%;
+  max-width: 400px;
+  font-size: 1rem;
+  background-color: #1c2433;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0 2px rgb(82, 80, 80);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+#searchInput:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #3b82f6;
+}
+
+.guide-section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: white !important;
+  font-size: 1.5rem !important;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.guide-card {
+  background-color: #1c2433;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.guide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 8px 3px #3b82f6, 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.guide-card h3 {
+  font-size: 1.15rem;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.guide-card p.guide-summary {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 0.7rem;
+  margin-top: 0;
+}
+
+.level-tag {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.level-tag.beginner {
+  background-color: #28a745;
+}
+
+.level-tag.intermediate {
+  background-color: orange;
+}
+
+.level-tag.advanced {
+  background-color: #dc3545;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 0.7rem 0;
+}
+
+.guide-tag {
+  background-color: #232b3a;
+  color: rgb(188, 185, 185);
+  padding: 0.32rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: 1px solid rgb(82, 80, 80);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: all 0.2s ease;
+}
+
+.open-guide-btn {
+  margin-top: 0.7rem;
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.4rem 1.1rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.18s;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+}
+
+.open-guide-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.show-more-btn {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background-color: gray;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.show-more-btn:hover {
+  background-color: rgb(81, 79, 79);
+  transform: translateY(-2px);
+}
+
+
+/* Admin guide styles */
+.guide-card.admin-guide {
+  border: 2px solid #22c55e !important;
+  background-color: #1c2433 !important;
+}
+
+.admin-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #22c55e;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

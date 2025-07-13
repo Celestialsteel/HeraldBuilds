@@ -1,0 +1,240 @@
+/* === FAQ Page Styles === */
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem;
+}
+
+/* Hero section on the FAQ page */
+.hero {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.faq-page .hero {
+  padding: 0.5rem 0 0.25rem;
+  min-height: auto;
+  background: none;
+  background-attachment: scroll;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: static;
+}
+
+.faq-page .hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  margin-top: 40px;
+  color: #ffffff;
+  text-shadow: none;
+  animation: none;
+  white-space: normal;
+  word-break: normal;
+  max-width: 100%;
+  display: block;
+}
+
+.hero .subtitle {
+  color: rgb(163, 161, 161);
+  font-size: 20px;
+  margin-bottom: 1.8rem;
+  margin-top: 0;
+}
+
+/* FAQ Category Buttons */
+.categories {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-btn {
+  background-color: #243043;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #94a3b8;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.category-btn.active,
+.category-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* FAQ Items */
+.faq-item {
+  background-color: #1c2433;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #243043;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #3b82f6;
+}
+
+.faq-answer {
+  padding: 0 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 1.5rem;
+  max-height: 500px;
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* === FAQ Submission Form === */
+.submit-faq {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-faq h2 {
+  color: #f1f5f9;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.submit-faq > p {
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-form > * {
+  width: 100%;
+}
+
+/* Submit Button */
+.submit-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+}
+
+.submit-btn .btn-text {
+  transition: opacity 0.3s ease;
+}
+
+.submit-btn.loading .btn-text {
+  opacity: 0;
+}
+
+.loader {
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 0.8s linear infinite;
+}
+
+.submit-btn.loading .loader {
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Submission Message */
+.submission-message {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.submission-message.show {
+  opacity: 1;
+}
+
+.submission-message.success {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.submission-message.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Form Groups */
+.form-group,
+.textarea-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.form-group textarea {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Character Counter */
+.char-counter span {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  background: rgba(30, 41, 59, 0.8);
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}

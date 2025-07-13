@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e1320;
+  color: #f1f5f9;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Login Page Styles */
+.admin-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.admin-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  border-radius: 16px 16px 0 0;
+}
+
+.admin-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.faq-form-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(30, 41, 59, 0.5);
+  color: #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+.faq-form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: rgba(30, 41, 59, 0.8);
+}
+
+.faq-form-input::placeholder {
+  color: #94a3b8;
+}
+
+.faq-form-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-form-button:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.faq-form-button:active {
+  transform: translateY(0);
+}
+
+.error-text {
+  color: #ef4444;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 12px;
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+}
+
+/* Admin Dashboard Styles */
+.admin-nav {
+  background: linear-gradient(135deg, #1c2433, #0f172a);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin-nav .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.admin-nav h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  opacity: 0.8;
+  min-width: 180px;
+}
+
+.admin-nav .nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.admin-nav .nav-links button {
+  color: #94a3b8;
+  background: transparent;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.admin-nav .nav-links button:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.admin-nav .nav-links button.active {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border-color: #3b82f6;
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+  border-color: #ef4444 !important;
+  color: white !important;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #dc2626, #b91c1c) !important;
+  border-color: #dc2626 !important;
+}
+
+/* Content Management Styles */
+.faq-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #1e293b, #172033);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.faq-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.faq-container form {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.faq-container input,
+.faq-container textarea,
+.faq-container select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(30, 41, 59, 0.5);
+  color: #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+.faq-container input:focus,
+.faq-container textarea:focus,
+.faq-container select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background-color: rgba(30, 41, 59, 0.8);
+}
+
+.faq-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.faq-container button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.faq-container button:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.faq-container button[style*="background-color: #dc3545"] {
+  background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+}
+
+.faq-container button[style*="background-color: #dc3545"]:hover {
+  background: linear-gradient(135deg, #dc2626, #b91c1c) !important;
+}
+
+.faq-container button[style*="background-color: #28a745"] {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+}
+
+.faq-container button[style*="background-color: #28a745"]:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+
+.faq-container button[style*="background-color: #6c757d"] {
+  background: linear-gradient(135deg, #6b7280, #4b5563) !important;
+}
+
+.faq-container button[style*="background-color: #6c757d"]:hover {
+  background: linear-gradient(135deg, #4b5563, #374151) !important;
+}
+
+/* Table Styles */
+.faq-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: rgba(30, 41, 59, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.faq-container th,
+.faq-container td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.faq-container th {
+  background: linear-gradient(135deg, #374151, #1f2937);
+  font-weight: 600;
+  color: #3b82f6;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.faq-container td {
+  color: #cbd5e1;
+}
+
+.faq-container tr:hover {
+  background-color: rgba(59, 130, 246, 0.05);
+}
+
+.faq-container tr:last-child td {
+  border-bottom: none;
+}
+
+/* Level badges */
+.level-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.level-badge.beginner {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.level-badge.intermediate {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.level-badge.advanced {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-nav .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .admin-nav .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .faq-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .faq-container table {
+    font-size: 14px;
+  }
+  
+  .faq-container th,
+  .faq-container td {
+    padding: 12px 8px;
+  }
+  
+  .admin-container {
+    margin: 1rem;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 2rem;
+  }
+}
+
+/* Loading and Success States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.success-message {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Enhanced Login Page Styles */
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e1320;
+}
+
+.admin-hero {
+  padding: 4rem 0 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.admin-hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-shadow: 
+    0 0 5px #00bfff,
+    0 0 10px #00bfff,
+    0 0 20px #00bfff,
+    0 0 40px #00bfff,
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from {
+    text-shadow: 
+      0 0 5px #00bfff,
+      0 0 10px #00bfff,
+      0 0 20px #00bfff,
+      0 0 40px #00bfff,
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  to {
+    text-shadow: 
+      0 0 10px #00bfff,
+      0 0 20px #00bfff,
+      0 0 30px #00bfff,
+      0 0 50px #00bfff,
+      2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.admin-hero-content p {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Update existing admin-container for new layout */
+.admin-login-page .admin-container {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  margin: 2rem auto;
+}
+
+.admin-login-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.admin-login-page .admin-title {
+  margin-bottom: 0.5rem;
+}
+
+.admin-subtitle {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.admin-features {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.admin-features .feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  flex: 1;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.admin-features .feature-item:hover {
+  background: rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.admin-features .feature-icon {
+  font-size: 1.5rem;
+}
+
+.admin-features .feature-item span:last-child {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+/* Responsive updates for enhanced login */
+@media (max-width: 768px) {
+  .admin-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .admin-features {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .admin-features .feature-item {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.75rem;
+  }
+  
+  .admin-features .feature-icon {
+    font-size: 1.2rem;
+  }
+}

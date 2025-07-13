@@ -1,0 +1,32 @@
+/* src/styles/components/Features.css */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 0 4rem;
+}
+
+.feature-card {
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 480px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 8px 3px #3b82f6, 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+}
+
+.feature-card p {
+  margin-bottom: 1.25rem;
+  color: #94a3b8;
+}
